@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #181818;
 }
 
 @media (min-width: 1024px) {
