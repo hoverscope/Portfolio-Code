@@ -70,10 +70,10 @@ export default {
   bottom: 0;
   background-image: linear-gradient(
       to right,
-      rgba(255, 255, 255, 0.8) 1px,
+      rgba(255, 255, 255, 0.05) 1px,
       transparent 1px
     ),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 1px, transparent 1px);
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 60px 60px;
   background-repeat: repeat;
   opacity: 0.5;
@@ -82,21 +82,20 @@ export default {
   width: 100%;
 }
 
-/* Dark mode styling */
-@media (prefers-color-scheme: dark) {
-  .retro-grid {
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.05) 1px,
-        transparent 1px
-      ),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  }
+/* General dark mode colors */
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
 }
 
 /* Ensure content sections are properly positioned */
 #hero {
   min-height: 100vh;
   width: 100%;
+}
+
+/* Section borders for better visibility in dark mode */
+.border {
+  border-color: rgba(255, 255, 255, 0.2);
 }
 </style>
